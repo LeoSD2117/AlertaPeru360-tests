@@ -1,4 +1,143 @@
 # AlertaPeru360 acceptance test
+US13:
+Feature: Iniciar sesión
+
+  Como usuario registrado en la landing page
+  quiero iniciar sesión
+  para volver a acceder a mi cuenta.
+
+  Scenario: Iniciar sesión correctamente
+    Dado que el usuario registrado está en la página de inicio de sesión
+    Cuando ingresa su correo electrónico y su contraseña y presiona el botón ingresar
+    Entonces accede a su cuenta y es redirigido a la página principal
+
+
+US42:
+Feature: Video explicativo de uso de la app
+
+  Como usuario registrado en la landing page
+  quiero ver un video explicativo de la app
+  para poder usarla de forma eficaz.
+
+  Scenario: Ver video tutorial
+    Dado que el usuario registrado está en la página principal
+    Cuando empieza a navegar y encuentra la sección “Protege a tu comunidad con información precisa” y presiona el botón “Aprende más”
+    Entonces podrá visualizar en una nueva pantalla el video explicativo de la app
+
+
+US46:
+Feature: Funciones de la app
+
+  Como usuario registrado en la landing page
+  quiero leer información con las funciones que tiene la app
+  para tener una idea general de cómo la usaré.
+
+  Scenario: Ver funciones de la app
+    Dado que el usuario registrado está en la página principal
+    Cuando empieza a navegar y encuentra la sección “Protege a tu comunidad con información precisa” y presiona el botón “Aprende más”
+    Entonces podrá leer las funciones principales de la app
+
+
+US51:
+Feature: Visualizar zona de riesgo
+
+  Como usuario registrado en la landing page
+  quiero un botón que me dirija a un mapa con las zonas de riesgo
+  para estar mejor preparado ante posibles desastres en mi área.
+
+  Scenario: Visor de mapas interactivos
+    Dado que el usuario registrado está en la sección de “Consulta las zonas de riesgo de tu zona”
+    Cuando presiona en el botón “Ver mapas ahora”
+    Entonces se redirigirá al visor de mapas interactivos
+
+
+US52:
+Feature: Zona de riesgo de Lima
+
+  Como usuario registrado en la landing page
+  quiero poder visualizar la zona de riesgo de Lima
+  para poder tomar precauciones.
+
+  Scenario: Mapa de Lima
+    Dado que el usuario registrado está en la pestaña de visor de mapas interactivos
+    Cuando presiona en el botón “Ver Lima”
+    Entonces el mapa mostrará el mapa de zona de riesgo de Lima
+
+
+US53:
+Feature: Zona de riesgo de Cusco
+
+  Como usuario registrado en la landing page
+  quiero poder visualizar la zona de riesgo de Cusco
+  para poder tomar precauciones.
+
+  Scenario: Mapa de Cusco
+    Dado que el usuario registrado está en la pestaña de visor de mapas interactivos
+    Cuando presiona en el botón “Ver Cusco”
+    Entonces el mapa mostrará el mapa de zona de riesgo de Cusco
+
+
+US54:
+Feature: Zona de riesgo de Piura
+
+  Como usuario registrado en la landing page
+  quiero poder visualizar la zona de riesgo de Piura
+  para poder tomar precauciones.
+
+  Scenario: Mapa de Piura
+    Dado que el usuario registrado está en la pestaña de visor de mapas interactivos
+    Cuando presiona en el botón “Ver Piura”
+    Entonces el mapa mostrará el mapa de zona de riesgo de Piura
+
+
+US55:
+Feature: Volver a la ventana principal desde el visor de mapas
+
+  Como usuario registrado que ya revisó el mapa de zona de riesgo de su ciudad
+  quiero poder regresar a la ventana principal
+  para poder seguir navegando en las otras secciones de la landing page.
+
+  Scenario: Volver al inicio
+    Dado que el usuario registrado está en la pestaña de visor de mapas interactivos
+    Cuando presiona en el botón “Volver al inicio”
+    Entonces se redirigirá a la página principal
+
+
+US56:
+Feature: Información acerca de los mapas de riesgo
+
+  Como usuario registrado en la landing page
+  quiero ver información acerca de los mapas de riesgo
+  para saber qué muestran, quién los usa, para qué sirven y su importancia.
+
+  Scenario: Información acerca de mapas de riesgo
+    Dado que el usuario registrado está en la sección de “Consulta las zonas de riesgo de tu zona”
+    Cuando presiona en el botón “¿Qué son los Mapas de Riesgo?”
+    Entonces se redirigirá a la pestaña con información acerca de los mapas de riesgo junto con una imagen
+             del mapa sísmico de la ciudad de Limatambo
+
+
+US57:
+Feature: Preguntas frecuentes sobre los mapas de riesgo
+
+  Como usuario registrado en la landing page
+  quiero ver una sección de preguntas frecuentes
+  para saber acerca de quién elabora los mapas de riesgo, con qué frecuencia se actualizan y si puedo usarlos sin internet.
+
+  Scenario: ¿Quién elabora los mapas de riesgo?
+    Dado que el usuario registrado está en la ventana de “Qué son los mapas de riesgo” y va a la sección de preguntas frecuentes
+    Cuando presiona en el botón “¿Quién elabora los mapas de riesgo?”
+    Entonces debajo se desplegará la respuesta: “Instituciones como INDECI, municipalidades, y organismos técnicos como CENEPRED o INGEMMET”
+
+  Scenario: ¿Con qué frecuencia se actualizan?
+    Dado que el usuario registrado está en la ventana de “Qué son los mapas de riesgo” y va a la sección de preguntas frecuentes
+    Cuando presiona en el botón “¿Con qué frecuencia se actualizan?”
+    Entonces debajo se desplegará la respuesta: “Dependiendo del tipo de amenaza, pueden actualizarse cada año o luego de un evento crítico.”
+
+  Scenario: ¿Puedo usarlo sin internet?
+    Dado que el usuario registrado está en la ventana de “Qué son los mapas de riesgo” y va a la sección de preguntas frecuentes
+    Cuando presiona en el botón “¿Puedo usarlo sin internet?”
+    Entonces debajo se desplegará la respuesta: “Sí, AlertaPerú360 te permite ver mapas descargados previamente en modo offline.”
 
 US12:
 Feature: Cerrar sesión
